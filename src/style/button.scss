@@ -86,7 +86,7 @@
         background-color: $grey;
     }
     &:hover {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
     &:disabled {
         filter: grayscale(0.5)
