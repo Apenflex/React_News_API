@@ -1,10 +1,12 @@
-import NewsList from "../newsList/NewsList";
+// import NewsList from "../newsList/NewsList";
+import CustomForm from '../form/Form';
 
 function App() {
 
    return (
       <div className="app">
-         <NewsList />
+         {/* <NewsList /> */}
+         <CustomForm />
       </div>
    );
 }
