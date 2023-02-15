@@ -1,0 +1,51 @@
+.app-header {
+    background-color: rgba(35, 34, 34, 0.9058823529); 
+    border: 2px solid #e7e7e7;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 6px;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        column-gap: 5px;
+        justify-content: center;
+        width: 600px;
+        h2 {
+            font-size: 21px;
+            padding: 8px;
+        }
+        input {
+            border: 1px solid #e7e7e7;
+            border-radius: 5px;
+            height: 25px;
+            padding: 5px;
+            width: 200px;
+        }
+        button {
+            background-color: #fff;
+            border: 1px solid #e7e7e7;
+            border-radius: 5px;
+            color: #000;
+            cursor: pointer;
+            font-size: 15px;
+            height: 25px;
+            padding: 2px;
+            width: 85px;
+            margin-left: 10px;
+            &:hover {
+                background-color: #b8eefc;
+            }
+        }
+    }
+}

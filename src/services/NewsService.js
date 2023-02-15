@@ -5,10 +5,13 @@ const useNewsService = () => {
 
     const _apiBase = 'https://newsapi.org/v2';
     const _apiKey = 'apiKey=51f0464447e54558a33b1b2084323d53';
+    const _search = 'world';
+    const _basesizeNews = 15;
 
-    const getAllNews = async () => {
-        const res = await request(`${_apiBase}/everything?q=world&pageSize=10&${_apiKey}`);
-        console.log(res.articles);
+    const getAllNews = async (search = _search, sizeNews = _basesizeNews) => {
+        console.log(`Get Service ${search}, ${sizeNews}`);
+        const res = await request(`${_apiBase}/everything?q=${search}&pageSize=${sizeNews}&${_apiKey}`);
+        // console.log(res.articles);
         return res.articles.map(_transformNews);
     };
 
